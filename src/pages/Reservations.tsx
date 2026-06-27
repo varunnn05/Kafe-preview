@@ -92,7 +92,7 @@ const Reservations = () => {
                 Book a Table
               </h1>
               <p className="text-lg text-muted-foreground">
-                Secure your perfect spot for an unforgettable KAFFYN experience.
+                Secure your perfect spot for an unforgettable KAFE experience.
               </p>
             </motion.div>
           </div>
@@ -226,7 +226,7 @@ const Reservations = () => {
                 <div className="rounded-2xl overflow-hidden shadow-medium">
                   <img
                     src={cafeInterior}
-                    alt="KAFFYN Interior"
+                    alt="KAFE Interior"
                     className="w-full h-64 lg:h-80 object-cover"
                   />
                 </div>

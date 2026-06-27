@@ -47,7 +47,7 @@ const Gallery = () => {
                 Gallery
               </h1>
               <p className="text-lg text-muted-foreground">
-                A glimpse into the KAFFYN experience. Every moment, every sip, every smile.
+                A glimpse into the KAFE experience. Every moment, every sip, every smile.
               </p>
             </motion.div>
           </div>

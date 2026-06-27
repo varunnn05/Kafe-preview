@@ -32,13 +32,13 @@ export const InstagramSection = () => {
           className="text-center mb-12"
         >
           <span className="text-sm tracking-[0.2em] uppercase text-gold font-medium">
-            @kaffyn.cafe
+            @kafe.cafe
           </span>
           <h2 className="font-serif text-4xl md:text-5xl text-primary mt-4 mb-6">
             Follow Our Journey
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Join our community and share your KAFFYN moments with us.
+            Join our community and share your KAFE moments with us.
           </p>
         </motion.div>
 
@@ -50,7 +50,7 @@ export const InstagramSection = () => {
           {instagramImages.map((image, index) => (
             <motion.a
               key={index}
-              href="https://www.instagram.com/kaffyn.cafe"
+              href="https://www.instagram.com/creating.presence"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.9 }}

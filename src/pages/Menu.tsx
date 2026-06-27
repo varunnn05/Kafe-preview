@@ -19,7 +19,7 @@ const menuItems = [
   { name: "Latte", description: "Espresso with silky steamed milk and light foam", price: "$5.50", category: "Coffee", image: heroCoffee },
   { name: "Pour Over", description: "Hand-crafted, single-origin Ethiopian Yirgacheffe", price: "$5.50", category: "Coffee", image: coffeeBeans },
   // Signature
-  { name: "Kaffyn Signature Latte", description: "House specialty with caramel and vanilla notes", price: "$6.50", category: "Signature", image: signatureDrink },
+  { name: "Kafe Signature Latte", description: "House specialty with caramel and vanilla notes", price: "$6.50", category: "Signature", image: signatureDrink },
   { name: "Honey Lavender Latte", description: "Floral lavender with local honey sweetness", price: "$6.50", category: "Signature", image: signatureDrink },
   { name: "Maple Oat Latte", description: "Pure maple syrup with creamy oat milk", price: "$6.00", category: "Signature", image: signatureDrink },
   // Breakfast

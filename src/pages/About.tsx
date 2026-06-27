@@ -54,7 +54,7 @@ const About = () => {
                 Our Story
               </span>
               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-primary mt-4 mb-6">
-                About KAFFYN
+                About KAFE
               </h1>
               <p className="text-lg text-muted-foreground">
                 More than just coffee. A place where stories brew and memories are made.
@@ -75,7 +75,7 @@ const About = () => {
                 <div className="relative">
                   <img
                     src={cafeInterior}
-                    alt="KAFFYN Interior"
+                    alt="KAFE Interior"
                     className="rounded-2xl shadow-medium"
                   />
                   <div className="absolute -bottom-6 -right-6 w-48 h-48 rounded-2xl overflow-hidden shadow-medium hidden md:block">
@@ -102,7 +102,7 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    KAFFYN isn't just a cafe — it's a space where conversations brew alongside coffee. 
+                    KAFE isn't just a cafe — it's a space where conversations brew alongside coffee. 
                     Born from a passion for exceptional coffee and meaningful connections, we set out to 
                     create more than just another coffee shop.
                   </p>
@@ -113,7 +113,7 @@ const About = () => {
                   </p>
                   <p>
                     From our carefully curated interior to our meticulously trained baristas, every detail 
-                    at KAFFYN is designed to make you feel at home while experiencing something truly special.
+                    at KAFE is designed to make you feel at home while experiencing something truly special.
                   </p>
                 </div>
               </motion.div>

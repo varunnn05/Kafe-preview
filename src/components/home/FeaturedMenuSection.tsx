@@ -9,7 +9,7 @@ import coffeeBeans from "@/assets/coffee-beans.jpg";
 
 const featuredItems = [
   {
-    name: "Kaffyn Signature Latte",
+    name: "Kafe Signature Latte",
     description: "Our house specialty with hints of caramel and vanilla",
     price: "$6.50",
     image: signatureDrink,

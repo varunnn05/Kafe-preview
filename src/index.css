@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* KAFFYN Premium Cafe Design System */
+    /* Warm, earthy, premium aesthetic */
+    
+    --background: 35 25% 97%;
+    --foreground: 25 30% 12%;
+
+    --card: 35 20% 95%;
+    --card-foreground: 25 30% 12%;
+
+    --popover: 35 20% 95%;
+    --popover-foreground: 25 30% 12%;
+
+    /* Rich espresso brown */
+    --primary: 25 35% 22%;
+    --primary-foreground: 35 25% 97%;
+
+    /* Warm latte cream */
+    --secondary: 35 30% 90%;
+    --secondary-foreground: 25 30% 18%;
+
+    /* Soft muted tones */
+    --muted: 35 15% 92%;
+    --muted-foreground: 25 15% 45%;
+
+    /* Golden accent */
+    --accent: 38 70% 50%;
+    --accent-foreground: 25 30% 12%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 35 25% 97%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 25 35% 22%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens for KAFFYN */
+    --coffee-dark: 25 40% 15%;
+    --coffee-medium: 25 35% 28%;
+    --coffee-light: 30 25% 45%;
+    --cream: 38 40% 94%;
+    --cream-dark: 35 25% 85%;
+    --gold: 38 70% 50%;
+    --gold-light: 40 60% 65%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(180deg, hsl(35 25% 97%) 0%, hsl(35 20% 92%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(38 40% 94%) 0%, hsl(35 25% 97%) 100%);
+    --gradient-coffee: linear-gradient(180deg, hsl(25 35% 22%) 0%, hsl(25 40% 15%) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(25 30% 20% / 0.08);
+    --shadow-medium: 0 8px 30px -6px hsl(25 30% 20% / 0.12);
+    --shadow-glow: 0 0 40px -10px hsl(38 70% 50% / 0.3);
+
+    --sidebar-background: 35 20% 95%;
+    --sidebar-foreground: 25 30% 12%;
+    --sidebar-primary: 25 35% 22%;
+    --sidebar-primary-foreground: 35 25% 97%;
+    --sidebar-accent: 35 30% 90%;
+    --sidebar-accent-foreground: 25 30% 12%;
+    --sidebar-border: 35 20% 88%;
+    --sidebar-ring: 25 35% 22%;
+  }
+
+  .dark {
+    --background: 25 30% 8%;
+    --foreground: 35 25% 95%;
+
+    --card: 25 25% 12%;
+    --card-foreground: 35 25% 95%;
+
+    --popover: 25 25% 12%;
+    --popover-foreground: 35 25% 95%;
+
+    --primary: 38 40% 85%;
+    --primary-foreground: 25 30% 10%;
+
+    --secondary: 25 20% 18%;
+    --secondary-foreground: 35 25% 90%;
+
+    --muted: 25 15% 20%;
+    --muted-foreground: 35 15% 60%;
+
+    --accent: 38 70% 55%;
+    --accent-foreground: 25 30% 10%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 35 25% 95%;
+
+    --border: 25 20% 18%;
+    --input: 25 20% 18%;
+    --ring: 38 40% 85%;
+
+    --coffee-dark: 25 30% 8%;
+    --coffee-medium: 25 25% 20%;
+    --coffee-light: 30 20% 40%;
+    --cream: 35 20% 15%;
+    --cream-dark: 35 15% 12%;
+    --gold: 38 70% 55%;
+    --gold-light: 40 60% 70%;
+
+    --gradient-hero: linear-gradient(180deg, hsl(25 30% 8%) 0%, hsl(25 25% 12%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(25 25% 12%) 0%, hsl(25 30% 8%) 100%);
+    --gradient-coffee: linear-gradient(180deg, hsl(35 20% 85%) 0%, hsl(38 40% 90%) 100%);
+
+    --sidebar-background: 25 25% 12%;
+    --sidebar-foreground: 35 25% 95%;
+    --sidebar-primary: 38 40% 85%;
+    --sidebar-primary-foreground: 25 30% 10%;
+    --sidebar-accent: 25 20% 18%;
+    --sidebar-accent-foreground: 35 25% 90%;
+    --sidebar-border: 25 20% 18%;
+    --sidebar-ring: 38 40% 85%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    @apply font-medium tracking-tight;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--coffee-light)) 100%);
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-steam {
+    animation: steam 3s ease-in-out infinite;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes steam {
+    0%, 100% {
+      opacity: 0;
+      transform: translateY(0) scaleX(1);
+    }
+    15% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 0.4;
+      transform: translateY(-20px) scaleX(1.2);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-40px) scaleX(0.8);
+    }
+  }
+}
